@@ -32,7 +32,7 @@ public class Aplicacion extends Application {
     private Subasta subasta;
     private ModelFactoryController modelFactoryController;
 
-    //Hola soy Daniel
+    //Hola soy Dani
 
     @Override
     public void start(Stage primaryStage) {
