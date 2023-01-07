@@ -32,6 +32,8 @@ public class Aplicacion extends Application {
     private Subasta subasta;
     private ModelFactoryController modelFactoryController;
 
+    //Hola soy Daniel
+
     @Override
     public void start(Stage primaryStage) {
     	this.primaryStage = primaryStage;
