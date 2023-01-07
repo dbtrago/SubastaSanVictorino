@@ -1,0 +1,19 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.button{
+    -fx-background-color:  #0fb844;
+    -fx-background-radius: 25.0;
+}
+
+.text-field{
+    -fx-background-color:  #273027;
+    -fx-background-radius: 25.0;
+    -fx-text-fill: #409141;
+}
+
+.text-area{
+    -fx-control-inner-background:#1a1a1a;
+    -fx-highlight-fill: #00ff00;
+    -fx-highlight-text-fill: #000000;
+    -fx-text-fill: #e0e0e0;
+}

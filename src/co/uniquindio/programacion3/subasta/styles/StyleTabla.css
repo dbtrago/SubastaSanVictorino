@@ -1,0 +1,30 @@
+
+.table-view .column-header-background {
+	-fx-background-color: rgb(14, 15, 14);
+	-fx-background-radius: 15;
+	-fx-background-insets: 0 0 10 0;
+	-fx-padding: 0 0 10 0;
+
+}
+
+.table-view .column-header, .table-view.filler {
+	-fx-size: 40;
+	-fx-border-width: 0 0 10 0;
+	-fx-background-color:transparent;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill:white;
+
+}
+
+.table-view {
+    -fx-base: #1d1d1d;
+    -fx-control-inner-background: #1d1d1d;
+    -fx-background-color: #1d1d1d;
+    -fx-table-cell-border-color: transparent;
+    -fx-table-header-border-color: transparent;
+    -fx-padding: 5;
+    -fx-background-radius: 15;
+    -fx-fill: white;
+}

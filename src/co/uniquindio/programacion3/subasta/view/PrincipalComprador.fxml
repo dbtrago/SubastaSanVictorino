@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1497.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.programacion3.subasta.controller.PrincipalCompradorController">
+   <children>
+      <HBox prefHeight="1000.0" prefWidth="1281.0">
+         <children>
+            <VBox prefHeight="659.0" prefWidth="265.0">
+               <children>
+                  <AnchorPane prefHeight="1000.0" prefWidth="218.0" style="-fx-background-color: #191a19;">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="38.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/LOGO.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="btnSalir" layoutX="14.0" layoutY="930.0" mnemonicParsing="false" onAction="#ventanaInicio" prefHeight="48.0" prefWidth="191.0" style="-fx-background-color: #5e211c;" stylesheets="@../styles/StyleBoton.css" text="Cerrar sesión" textFill="#daa3a3">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnMisPujas" layoutX="14.0" layoutY="212.0" mnemonicParsing="false" onAction="#ventanaMisPujas" prefHeight="48.0" prefWidth="191.0" stylesheets="@../styles/StyleBoton.css" text="Mis pujas" textFill="#ababab">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnMisCompras" layoutX="16.0" layoutY="270.0" mnemonicParsing="false" onAction="#ventanaMisCompras" prefHeight="48.0" prefWidth="191.0" stylesheets="@../styles/StyleBoton.css" text="Mis compras" textFill="#ababab">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnMisCompras1" layoutX="8.0" layoutY="607.0" mnemonicParsing="false" onAction="#ventanaMisCompras" opacity="0.0" prefHeight="48.0" prefWidth="210.0" stylesheets="@../styles/StyleBoton.css" text="Mis compras" textFill="#ababab">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <VBox prefHeight="1025.0" prefWidth="1282.0" style="-fx-background-color: #141414;">
+               <children>
+                  <AnchorPane prefHeight="1000.0" prefWidth="1282.0" style="-fx-background-color: #141414;">
+                     <children>
+                        <ImageView fitHeight="356.0" fitWidth="825.0" layoutX="14.0" layoutY="644.0" opacity="0.12" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/fondo.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="1008.0" fitWidth="1282.0" opacity="0.12" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/fondo.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="50.0" layoutY="71.0" prefHeight="74.0" prefWidth="337.0" text="Comprador" textFill="#e8e8e8">
+                           <font>
+                              <Font name="Arial Bold" size="47.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtBuscarProducto" layoutX="191.0" layoutY="157.0" prefHeight="31.0" prefWidth="569.0" promptText="Nombre" stylesheets="@../styles/StyleField.css">
+                           <font>
+                              <Font name="System Bold Italic" size="15.0" />
+                           </font></TextField>
+                        <Label layoutX="62.0" layoutY="164.0" text="Buscar producto:" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="tablaComprador" layoutX="50.0" layoutY="200.0" onSort="#tablaProductosComprador" prefHeight="712.0" prefWidth="762.0" stylesheets="@../styles/StyleTabla.css">
+                           <columns>
+                              <TableColumn fx:id="columnNombreProductoCom" prefWidth="227.0" text="Nombre" />
+                              <TableColumn fx:id="columnDescripcionProductoCom" prefWidth="295.0" text="Descripción" />
+                              <TableColumn fx:id="columnPrecioProductoCom" prefWidth="120.0" text="Precio" />
+                              <TableColumn fx:id="columnNumPujanresProductoCom" prefWidth="115.0" text="Pujantes" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="btnOfrecer" layoutX="828.0" layoutY="807.0" mnemonicParsing="false" onAction="#hacerOferta" prefHeight="31.0" prefWidth="72.0" style="-fx-background-color: #5e4f1c;" stylesheets="@../styles/StyleBoton.css" text="Ofrecer" textFill="#e8dd9b">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="25.0" fitWidth="396.0" layoutX="1029.0" layoutY="71.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/title2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="25.0" fitWidth="150.0" layoutX="1147.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/title1.png" />
+                           </image>
+                        </ImageView>
+                        <AnchorPane layoutX="828.0" layoutY="297.0" prefHeight="383.0" prefWidth="402.0" style="-fx-background-color: #1a1a1a;">
+                           <children>
+                              <ImageView fitHeight="321.0" fitWidth="319.0" layoutX="42.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label layoutX="84.0" layoutY="440.0" text="  " textFill="WHITE" />
+                              <Separator layoutX="48.0" layoutY="411.0" prefHeight="0.0" prefWidth="306.0" />
+                              <Label layoutX="253.0" layoutY="440.0" text="  " textFill="WHITE" />
+                              <Label layoutX="73.0" layoutY="474.0" text="  " textFill="WHITE" />
+                              <Label layoutX="240.0" layoutY="474.0" text="  " textFill="WHITE" />
+                              <Label layoutX="93.0" layoutY="437.0" text="  " textFill="WHITE" />
+                              <Label layoutX="259.0" layoutY="437.0" text="  " textFill="WHITE" />
+                              <Label layoutX="199.0" layoutY="437.0" text="  " textFill="WHITE" />
+                           </children>
+                        </AnchorPane>
+                        <Button fx:id="btnChat" layoutX="1086.0" layoutY="238.0" mnemonicParsing="false" onAction="#abrirChat" prefHeight="52.0" prefWidth="144.0" stylesheets="@../styles/StyleBoton3.css" text="  CHAT" textFill="#97ff63">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="79.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/botonChat.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnActualizar" layoutX="760.0" layoutY="148.0" mnemonicParsing="false" onAction="#actualizarTabla" stylesheets="@../styles/StyleBoton2.css">
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/actualizar.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <VBox prefHeight="686.0" prefWidth="402.0" style="-fx-background-color: #1a1a1a;" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

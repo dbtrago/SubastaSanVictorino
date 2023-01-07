@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="645.0" prefWidth="1189.0" style="-fx-background-color: #191a19;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.programacion3.subasta.controller.ProductosPujaController">
+   <children>
+      <AnchorPane layoutX="-47.0" layoutY="-35.0">
+         <children>
+            <ImageView disable="true" fitHeight="750.0" fitWidth="1508.0" focusTraversable="true" opacity="0.05" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <Blend />
+               </effect>
+               <image>
+                  <Image url="@../images/fondo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="120.0" fitWidth="116.0" layoutX="1104.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/LOGO.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="904.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/title1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="393.0" layoutX="816.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/title2.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="116.0" layoutY="140.0" text="Mis Productos en Puja" textFill="#e8e8e8">
+               <font>
+                  <Font name="Arial Bold" size="62.0" />
+               </font>
+            </Label>
+            <Label layoutX="116.0" layoutY="118.0" text="&lt;nombreAnunciante&gt;" textFill="#e8e8e8">
+               <font>
+                  <Font name="Arial Bold" size="28.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnAtras" layoutX="26.0" layoutY="59.0" mnemonicParsing="false" onAction="#abrirVentanaAnunciante" stylesheets="@../styles/StyleBoton2.css">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/atras.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <TableView fx:id="tableProductosPuja" layoutX="122.0" layoutY="229.0" prefHeight="423.0" prefWidth="1060.0" stylesheets="@../styles/StyleTabla.css">
+               <columns>
+                  <TableColumn fx:id="columnNombrePrP" prefWidth="126.0" text="Nombre" />
+                  <TableColumn fx:id="columnTipoProductoPrP" prefWidth="130.0" text="Tipo Producto" />
+                  <TableColumn fx:id="columnDescripcionPrP" prefWidth="177.0" text="Descripcion" />
+                  <TableColumn fx:id="columnPublicacionPrP" prefWidth="165.0" text="Publicacion" />
+                  <TableColumn fx:id="columnFinalizacionPrP" prefWidth="150.0" text="Finalizacion" />
+                  <TableColumn fx:id="columnValorInicialPrP" prefWidth="148.0" text="Valor Inicial" />
+                  <TableColumn fx:id="columnValorSuperiorPrP" prefWidth="163.0" text="Valor Superior" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
+

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1514.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.programacion3.subasta.controller.PrincipalAnuncianteController">
+   <children>
+      <HBox prefHeight="1000.0" prefWidth="1281.0">
+         <children>
+            <VBox prefHeight="659.0" prefWidth="265.0">
+               <children>
+                  <AnchorPane prefHeight="1002.0" prefWidth="230.0" style="-fx-background-color: #191a19;">
+                     <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="38.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/LOGO.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="btnSalir" layoutX="13.0" layoutY="931.0" mnemonicParsing="false" onAction="#ventanaInicio" prefHeight="48.0" prefWidth="199.0" style="-fx-background-color: #5e211c;" stylesheets="@../styles/StyleBoton.css" text="Cerrar sesión" textFill="#e49c9c">
+                           <font>
+                              <Font name="System Bold" size="22.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnCrearProducto" layoutX="13.0" layoutY="270.0" mnemonicParsing="false" onAction="#ventanaCrearProducto" prefHeight="48.0" prefWidth="199.0" style="-fx-background-color: #252626;" stylesheets="@../styles/StyleBoton.css" text="Crear anuncio" textFill="#c3c0c0">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnProductosPuja" layoutX="13.0" layoutY="327.0" mnemonicParsing="false" onAction="#ventanaProductosPuja" prefHeight="48.0" prefWidth="199.0" style="-fx-background-color: #252626;" stylesheets="@../styles/StyleBoton.css" text="Productos en puja" textFill="#c3c0c0">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnMisVentas" layoutX="13.0" layoutY="384.0" mnemonicParsing="false" onAction="#ventanaMisVentas" prefHeight="48.0" prefWidth="199.0" style="-fx-background-color: #252626;" stylesheets="@../styles/StyleBoton.css" text="Mis ventas" textFill="#c3c0c0">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="5.0" layoutY="607.0" mnemonicParsing="false" opacity="0.0" prefHeight="48.0" prefWidth="225.0" style="-fx-background-color: #252626;" stylesheets="@../styles/StyleBoton.css" text="PRODUCTOS EN PUJA" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="21.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+            <VBox prefHeight="1312.0" prefWidth="1435.0">
+               <children>
+                  <AnchorPane prefHeight="1312.0" prefWidth="1491.0" style="-fx-background-color: #141414;">
+                     <children>
+                        <ImageView fitHeight="702.0" fitWidth="1282.0" layoutX="3.0" layoutY="646.0" opacity="0.12" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/fondo.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="702.0" fitWidth="1282.0" opacity="0.12" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/fondo.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="51.0" layoutY="75.0" prefHeight="48.0" prefWidth="337.0" text="Anunciante" textFill="#e8e8e8">
+                           <font>
+                              <Font name="Arial Bold" size="32.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="54.0" layoutY="207.0" text="Mis productos" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="tablaAnunciante" layoutX="50.0" layoutY="245.0" prefHeight="686.0" prefWidth="726.0" stylesheets="@../styles/StyleTabla.css">
+                           <columns>
+                              <TableColumn fx:id="columnaNombre" prefWidth="183.0" text="Nombre" />
+                              <TableColumn fx:id="columnaDescripcion" prefWidth="276.0" text="Descripción" />
+                              <TableColumn fx:id="columnaPrecio" minWidth="0.0" prefWidth="138.0" text="Precio" />
+                              <TableColumn fx:id="columnaPujantes" prefWidth="128.0" text="Pujantes" />
+                           </columns>
+                        </TableView>
+                        <Button fx:id="btnEliminar" layoutX="1148.0" layoutY="946.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="72.0" style="-fx-background-color: #5e4f1c;" stylesheets="@../styles/StyleBoton.css" text="Eliminar" textFill="#e4d992">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <ImageView fitHeight="25.0" fitWidth="396.0" layoutX="1013.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/title2.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="25.0" fitWidth="150.0" layoutX="1131.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../images/title1.png" />
+                           </image>
+                        </ImageView>
+                        <Button layoutX="1066.0" layoutY="946.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="72.0" style="-fx-background-color: #367d33;" stylesheets="@../styles/StyleBoton.css" text="Modificar" textFill="#b8e394">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="51.0" layoutY="115.0" prefHeight="68.0" prefWidth="80.0" text="Hi," textFill="#e8e8e8">
+                           <font>
+                              <Font name="Arial Bold" size="59.0" />
+                           </font>
+                        </Label>
+                        <VBox layoutX="821.0" layoutY="251.0" prefHeight="686.0" prefWidth="402.0" style="-fx-background-color: #1a1a1a;">
+                           <children>
+                              <AnchorPane prefHeight="698.0" prefWidth="402.0">
+                                 <children>
+                                    <ImageView fx:id="image" fitHeight="321.0" fitWidth="319.0" layoutX="42.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true" />
+                                    <Label fx:id="lblNombreProd" layoutX="84.0" layoutY="440.0" text="  " textFill="WHITE" />
+                                    <Separator layoutX="48.0" layoutY="411.0" prefHeight="0.0" prefWidth="306.0" />
+                                    <Label layoutX="253.0" layoutY="440.0" text="  " textFill="WHITE" />
+                                    <Label layoutX="73.0" layoutY="474.0" text="  " textFill="WHITE" />
+                                    <Label layoutX="240.0" layoutY="474.0" text="  " textFill="WHITE" />
+                                    <Label layoutX="87.0" layoutY="519.0" text="  " textFill="WHITE" />
+                                    <Label layoutX="253.0" layoutY="519.0" text="  " textFill="WHITE" />
+                                    <Label layoutX="197.0" layoutY="585.0" text="  " textFill="WHITE" />
+                                 </children>
+                              </AnchorPane>
+                           </children></VBox>
+                        <Text fx:id="nombreUser" fill="WHITE" layoutX="131.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&lt;nombre&gt;" wrappingWidth="544.0">
+                           <font>
+                              <Font name="Arial Bold" size="60.0" />
+                           </font></Text>
+                        <Button fx:id="btnChat" layoutX="1079.0" layoutY="181.0" mnemonicParsing="false" onAction="#abrirChat" prefHeight="52.0" prefWidth="144.0" stylesheets="@../styles/StyleBoton3.css" text="  CHAT" textFill="#97ff63">
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="79.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/botonChat.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btnExportar" layoutX="901.0" layoutY="181.0" mnemonicParsing="false" onAction="#exportarCSV" prefHeight="52.0" prefWidth="165.0" stylesheets="@../styles/StyleBoton3.css" text="Exportar" textFill="#97ff63">
+                           <font>
+                              <Font name="System Bold" size="17.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="79.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/LogoExcel.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="881.0" style="-fx-background-color: #191a19;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.programacion3.subasta.controller.InicioController">
+   <children>
+      <ImageView disable="true" fitHeight="750.0" fitWidth="1508.0" focusTraversable="true" layoutX="-226.0" layoutY="-46.0" opacity="0.05" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <Blend />
+         </effect>
+         <image>
+            <Image url="@../images/fondo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="75.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/LOGO.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="243.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/title1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="115.0" fitWidth="464.0" layoutX="62.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/title2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="330.0" fitWidth="424.0" layoutX="489.0" layoutY="54.0" pickOnBounds="true" preserveRatio="true" rotate="-90.0">
+         <image>
+            <Image url="@../images/Cuadro.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnComprador" layoutX="611.0" layoutY="308.0" mnemonicParsing="false" onAction="#abrirLogin" prefHeight="43.0" prefWidth="181.0" stylesheets="@../styles/StyleBoton.css" text="Iniciar Sesión" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="615.0" layoutY="102.0" text="Bienvenido" textFill="WHITE">
+         <font>
+            <Font name="Arial Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="612.0" layoutY="167.0" text="Bienvenido a San Victorino; " textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="567.0" layoutY="185.0" text="Un espacio creado para la interacción de " textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="591.0" layoutY="206.0" text="usuarios con el fin de intercambiar" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="576.0" layoutY="227.0" text="productos atravez de una competencia" textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="630.0" layoutY="248.0" text="directa en tiempo real." textFill="WHITE">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+encoding//src/co/uniquindio/programacion3/subasta/controller/LoginController.java=UTF-8
+encoding//src/co/uniquindio/programacion3/subasta/controller/MisComprasCompradorController.java=UTF-8
+encoding//src/co/uniquindio/programacion3/subasta/controller/MisPujasCompradorController.java=UTF-8
+encoding//src/co/uniquindio/programacion3/subasta/controller/MisVentasAnuncianteController.java=UTF-8
+encoding//src/co/uniquindio/programacion3/subasta/controller/ModelFactoryController.java=UTF-8
+encoding//src/co/uniquindio/programacion3/subasta/controller/PrincipalAnuncianteController.java=UTF-8
+encoding//src/co/uniquindio/programacion3/subasta/controller/PrincipalCompradorController.java=UTF-8
+encoding//src/co/uniquindio/programacion3/subasta/controller/ProductoController.java=UTF-8
+encoding//src/co/uniquindio/programacion3/subasta/controller/ProductosPujaController.java=UTF-8
+encoding//src/co/uniquindio/programacion3/subasta/controller/RegistroLoginController.java=UTF-8
+encoding//src/co/uniquindio/programacion3/subasta/persistence/ArchivoUtil.java=UTF-8

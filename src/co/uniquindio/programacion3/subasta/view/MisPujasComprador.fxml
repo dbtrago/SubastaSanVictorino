@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="645.0" prefWidth="1163.0" style="-fx-background-color: #191a19;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.programacion3.subasta.controller.MisPujasCompradorController">
+   <children>
+      <AnchorPane layoutX="-1.0" layoutY="-35.0">
+         <children>
+            <ImageView disable="true" fitHeight="750.0" fitWidth="1235.0" focusTraversable="true" layoutX="7.0" opacity="0.05" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <Blend />
+               </effect>
+               <image>
+                  <Image url="@../images/fondo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="120.0" fitWidth="116.0" layoutX="1020.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/LOGO.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="820.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/title1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="393.0" layoutX="732.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/title2.png" />
+               </image>
+            </ImageView>
+			<Label layoutX="116.0" layoutY="140.0" text="Mis Pujas" textFill="#e8e8e8">               <font>
+                  <Font name="Arial Bold" size="62.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tablePujasMisPuj" layoutX="321.0" layoutY="229.0" prefHeight="398.0" prefWidth="571.0" stylesheets="@../styles/StyleTabla.css">
+               <columns>
+                  <TableColumn fx:id="columnNombreMisPuj" prefWidth="187.0" text="Nombre" />
+                  <TableColumn fx:id="columnCodPujaMisPuj" prefWidth="184.0" text="Codigo Puja" />
+                  <TableColumn fx:id="columnValorOfertadoMisPuj" prefWidth="195.0" text="Valor Ofertador" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnAtras" layoutX="-26.0" layoutY="38.0" mnemonicParsing="false" onAction="#abrirVentanaAnunciante" stylesheets="@../styles/StyleBoton2.css">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/atras.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

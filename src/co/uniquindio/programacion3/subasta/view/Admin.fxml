@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="481.0" prefWidth="456.0" style="-fx-background-color: #191a19;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.programacion3.subasta.controller.AdminController">
+   <children>
+      <ImageView disable="true" fitHeight="750.0" fitWidth="1508.0" focusTraversable="true" layoutX="-66.0" layoutY="-90.0" opacity="0.05" pickOnBounds="true" preserveRatio="true">
+         <effect>
+            <Blend />
+         </effect>
+         <image>
+            <Image url="@../images/fondo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="150.0" layoutX="234.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/title1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="396.0" layoutX="116.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/title2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="74.0" fitWidth="74.0" layoutX="348.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/LOGO.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnAtras" layoutX="-26.0" layoutY="415.0" mnemonicParsing="false" onAction="#abrirVentanaLogin" prefHeight="52.0" prefWidth="64.0" stylesheets="@../styles/StyleBoton2.css">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/atras.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="22.0" layoutY="22.0" text="Control de usuarios" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tablaAdmin" layoutX="35.0" layoutY="128.0" prefHeight="267.0" prefWidth="385.0" stylesheets="@../styles/StyleTabla.css">
+        <columns>
+          <TableColumn fx:id="columnaTipo" prefWidth="119.0" text="Tipo" />
+          <TableColumn fx:id="columnaUsuario" prefWidth="120.0" text="Usuario" />
+            <TableColumn fx:id="columnaContrasenia" prefWidth="138.0" text="Contraseña" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
+

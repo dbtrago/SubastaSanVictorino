@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="645.0" prefWidth="1189.0" style="-fx-background-color: #191a19;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="-47.0" layoutY="-35.0">
+         <children>
+            <ImageView disable="true" fitHeight="750.0" fitWidth="1508.0" focusTraversable="true" opacity="0.05" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <Blend />
+               </effect>
+               <image>
+                  <Image url="@../images/fondo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="1053.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/LOGO.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="846.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/title1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="115.0" fitWidth="464.0" layoutX="589.0" layoutY="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/title2.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="421.0" fitWidth="647.0" layoutX="100.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/Cuadro.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="116.0" layoutY="140.0" text="Anuncios" textFill="#e8e8e8">
+               <font>
+                  <Font name="Arial Bold" size="62.0" />
+               </font>
+            </Label>
+            <Label layoutX="749.0" layoutY="220.0" prefHeight="37.0" prefWidth="297.0" text="Mis anuncios" textFill="#e8e8e8">
+               <font>
+                  <Font name="Arial Bold" size="27.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtNombreProducto" layoutX="369.0" layoutY="285.0" prefHeight="25.0" prefWidth="314.0" promptText="Nombre" style="-fx-background-color: #ffffff;" stylesheets="@../styles/StyleField.css">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </TextField>
+            <Label fx:id="imageProducto" layoutX="127.0" layoutY="255.0" prefHeight="246.0" prefWidth="210.0" style="-fx-border-color: #ffffff;" />
+            <ChoiceBox fx:id="cmbTipo" layoutX="423.0" layoutY="335.0" prefHeight="25.0" prefWidth="258.0" stylesheets="@../styles/StyleComboBox.css" />
+            <Label layoutX="371.0" layoutY="337.0" text="Tipo" textFill="#e8e8e8">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="116.0" layoutY="118.0" text="&lt;nombreAnunciante&gt;" textFill="#e8e8e8">
+               <font>
+                  <Font name="Arial Bold" size="28.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="calendarFechaInicial" layoutX="368.0" layoutY="403.0" prefHeight="25.0" prefWidth="143.0" style="-fx-background-color: #b5b5b5;" />
+            <DatePicker fx:id="calendarFechaFinal" layoutX="536.0" layoutY="403.0" prefHeight="25.0" prefWidth="150.0" />
+            <Label layoutX="368.0" layoutY="375.0" text="Fecha inicial" textFill="#e8e8e8">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="541.0" layoutY="375.0" text="Fecha final" textFill="#e8e8e8">
+               <font>
+                  <Font name="Arial Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="txtDescripcion" layoutX="364.0" layoutY="447.0" prefHeight="123.0" prefWidth="324.0" promptText="Descripción" wrapText="true">
+               <font>
+                  <Font name="System Italic" size="12.0" />
+               </font>
+            </TextArea>
+            <Label layoutX="127.0" layoutY="530.0" text="Precio" textFill="#e8e8e8">
+               <font>
+                  <Font name="Arial Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtPrecio" layoutX="214.0" layoutY="526.0" prefHeight="36.0" prefWidth="136.0" style="-fx-background-color: #b5b5b5;" stylesheets="@../styles/StyleField.css">
+               <font>
+                  <Font name="Arial Bold" size="19.0" />
+               </font>
+            </TextField>
+            <Label layoutX="369.0" layoutY="255.0" text="Producto" textFill="#e8e8e8">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Label>
+            <Button layoutX="583.0" layoutY="592.0" mnemonicParsing="false" style="-fx-background-color: #d4cc5f;" stylesheets="@../styles/StyleBoton.css" text="Editar anuncio" textFill="#36310c">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="44.0" fitWidth="66.0" layoutX="-19.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/atras.png" />
+         </image>
+      </ImageView>
+      <TableView layoutX="702.0" layoutY="235.0" prefHeight="372.0" prefWidth="439.0" stylesheets="@../styles/StyleTabla.css">
+         <columns>
+            <TableColumn prefWidth="75.0" text="Nombre" />
+            <TableColumn prefWidth="199.0" text="Descripción" />
+            <TableColumn prefWidth="164.0" text="Precio" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

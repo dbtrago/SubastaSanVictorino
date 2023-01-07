@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="645.0" prefWidth="1163.0" style="-fx-background-color: #191a19;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.programacion3.subasta.controller.MisComprasCompradorController">
+   <children>
+      <AnchorPane layoutX="-1.0" layoutY="-35.0">
+         <children>
+            <ImageView disable="true" fitHeight="750.0" fitWidth="1235.0" focusTraversable="true" layoutX="7.0" opacity="0.05" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <Blend />
+               </effect>
+               <image>
+                  <Image url="@../images/fondo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="120.0" fitWidth="116.0" layoutX="1020.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/LOGO.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="820.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/title1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="393.0" layoutX="732.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/title2.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="99.0" layoutY="176.0" text="Mis Compras" textFill="#e8e8e8">
+               <font>
+                  <Font name="Arial Bold" size="62.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtNombreAnunciante" layoutX="99.0" layoutY="154.0" text="&lt;nombreAnunciante&gt;" textFill="#e8e8e8">
+               <font>
+                  <Font name="Arial Bold" size="28.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tableComprasMC" layoutX="85.0" layoutY="250.0" prefHeight="409.0" prefWidth="1002.0" stylesheets="@../styles/StyleTabla.css">
+               <columns>
+                  <TableColumn fx:id="columnNombreProductoMC" prefWidth="187.0" text="Nombre Producto" />
+                  <TableColumn fx:id="columnTipoProductoMC" prefWidth="184.0" text="Tipo Producto" />
+                  <TableColumn fx:id="columnDescripcionMC" prefWidth="195.0" text="Descripcion" />
+                  <TableColumn fx:id="columnNombreAnuncianteMC" prefWidth="208.0" text="Nombre Anunciante" />
+                  <TableColumn fx:id="columnValorSuperiorMC" prefWidth="223.0" text="Valor Superior" />
+               </columns>
+            </TableView>
+            <Button fx:id="btnExportar" layoutX="920.0" layoutY="195.0" mnemonicParsing="false" onAction="#exportarCSV" prefHeight="40.0" prefWidth="165.0" stylesheets="@../styles/StyleBoton3.css" text="Exportar" textFill="#97ff63">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="79.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/LogoExcel.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button fx:id="btnAtras" layoutX="-26.0" layoutY="35.0" mnemonicParsing="false" onAction="#abrirVentanaAnunciante" stylesheets="@../styles/StyleBoton2.css">
+         <graphic>
+            <ImageView fitHeight="40.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/atras.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>

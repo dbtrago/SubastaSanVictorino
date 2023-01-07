@@ -1,0 +1,4 @@
+.text-field {
+    -fx-text-fill:rgb(223, 221, 221);
+    -fx-background-radius: 25;
+}

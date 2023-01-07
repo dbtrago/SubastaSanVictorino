@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="645.0" prefWidth="1189.0" style="-fx-background-color: #191a19;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.uniquindio.programacion3.subasta.controller.MisVentasAnuncianteController">
+   <children>
+      <AnchorPane layoutX="-47.0" layoutY="-35.0">
+         <children>
+            <ImageView disable="true" fitHeight="750.0" fitWidth="1508.0" focusTraversable="true" opacity="0.05" pickOnBounds="true" preserveRatio="true">
+               <effect>
+                  <Blend />
+               </effect>
+               <image>
+                  <Image url="@../images/fondo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="120.0" fitWidth="116.0" layoutX="1104.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/LOGO.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="904.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/title1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="393.0" layoutX="816.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/title2.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="116.0" layoutY="140.0" text="Mis Ventas" textFill="#e8e8e8">
+               <font>
+                  <Font name="Arial Bold" size="62.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnAtras" layoutX="26.0" layoutY="59.0" mnemonicParsing="false" onAction="#abrirVentanaAnunciante" stylesheets="@../styles/StyleBoton2.css">
+               <graphic>
+                  <ImageView fitHeight="40.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/atras.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <TableView fx:id="tableAnunciosMisVen" layoutX="173.0" layoutY="229.0" prefHeight="423.0" prefWidth="571.0" stylesheets="@../styles/StyleTabla.css">
+               <columns>
+                  <TableColumn fx:id="columnNombreMisVen" prefWidth="126.0" text="Nombre" />
+                  <TableColumn fx:id="columnTipoProductoMisVen" prefWidth="130.0" text="Tipo Producto" />
+                  <TableColumn fx:id="columnFinalizacionMisVen" prefWidth="150.0" text="Finalizacion" />
+                  <TableColumn fx:id="columnValorSuperiorMisVen" prefWidth="164.0" text="Valor Superior" />
+               </columns>
+            </TableView>
+            <TableView fx:id="tablePujasMisVen" layoutX="846.0" layoutY="229.0" prefHeight="423.0" prefWidth="258.0" stylesheets="@../styles/StyleTabla.css">
+               <columns>
+                  <TableColumn fx:id="columnIdComMisVen" prefWidth="126.0" text="ID Comprador" />
+                  <TableColumn fx:id="columnValorOfertadoMisVen" prefWidth="131.0" text="Valor Ofertado" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
